@@ -31,7 +31,6 @@ getFilesName(imgsPath, function (err, content) {
                 console.log('Clear images');
             }else{
                 console.log('invalid directory');
-                console.log(typeof imageType);
             }
 
             break;
