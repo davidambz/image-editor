@@ -1,36 +1,41 @@
-# image Editor
 
-Command line image editor developed with nodejs.
+NodeJS Command Line Image Editor
+This is a command line image editor developed with Node.js. The editor allows you to perform various operations on images in the specified directories. Below are the instructions on how to use the editor:
 
-# How to use
-Edit all images in the images directory at once, creating a new file in the directory related to the function performed.
+How to Use
+Resize Images
+To resize all images in the "images" directory, creating new files in the directory related to the function performed:
 
+bash
+Copy code
+node app.js resize width(int)
+Example:
 
-## Resize
-### The images will be resized from the width:
-node app.js **resize width(int)**
+bash
+Copy code
+node app.js resize 1920
+Compress Images
+To compress images in the "images" directory:
 
-### Example:
-node app.js **resize 1920**
+bash
+Copy code
+node app.js compress
+Clear Images
+To delete images from specific directories:
 
+Delete images from the "images" directory:
 
+bash
+Copy code
+node app.js clear images
+Delete images from the "images_resize" directory:
 
-## Compress
-### The images will be compressed with the command:
-node app.js **compress**
+bash
+Copy code
+node app.js clear imagesResize
+Delete images from the "images_compress" directory:
 
-
-
-## CLEAR
-### Delete images from directories:
-
-#### Delete images from directory: images
-node app.js **clear images**
-
-
-#### Delete images from directory: **images_resize**
-node app.js **clear imagesResize**
-
-
-#### Delete images from directory: **images_compress**
-node app.js **clear imagesCompress**
+bash
+Copy code
+node app.js clear imagesCompress
+Feel free to customize the directories and parameters according to your needs. Happy editing! 🚀
